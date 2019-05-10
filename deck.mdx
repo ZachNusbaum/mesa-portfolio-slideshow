@@ -2,7 +2,7 @@ import { Head, Notes, Appear } from 'mdx-deck';
 import { Split } from 'mdx-deck/layouts';
 import { LineChart, Line } from 'recharts';
 import Languages from './components/languages';
-// export { theme } from './theme';
+import ReactWordcloud from 'react-wordcloud';
 export { book as theme } from '@mdx-deck/themes';
 <Head>
   <title>Zachary Nusbaum</title>
@@ -58,6 +58,43 @@ www.ZDN.dev &mdash; hello@zdn.dev
     </ul>
   </div>
 </Split>
+
+---
+
+# Skills
+
+<div style={{ width: '100%', height: '100%' }}>
+  <ReactWordcloud
+    options={{
+      fontSizes: [36, 48, 60, 72, 98, 110, 122],
+      padding: 12,
+      rotationAngles: [-90, -45, 0, 45, 90]
+    }}
+    words={[
+      { text: 'React', value: 20 },
+      { text: 'Angular', value: 6 },
+      { text: 'Ruby on Rails', value: 7 },
+      { text: 'PHP', value: 9 },
+      { text: 'MySQL', value: 7 },
+      { text: 'PostgreSQL', value: 6 },
+      { text: 'Node.js', value: 12 },
+      { text: 'Express.js', value: 10 },
+      { text: 'Next.js', value: 6 },
+      { text: 'HTML5', value: 5 },
+      { text: 'CSS3', value: 5 },
+      { text: 'jQuery', value: 6 },
+      { text: 'UX', value: 6 },
+      { text: 'Heroku', value: 6 },
+      { text: 'Git', value: 14 },
+      { text: 'Javascript', value: 16 },
+      { text: 'AJAX', value: 11 },
+      { text: 'Search Engine Optimization', value: 6 },
+      { text: 'GraphQL', value: 6 },
+      { text: 'REST', value: 12 },
+      { text: 'API', value: 14 }
+    ]}
+  />
+</div>
 
 ---
 
