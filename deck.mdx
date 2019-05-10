@@ -1,11 +1,12 @@
-import { Head, Notes } from 'mdx-deck';
+import { Head, Notes, Appear } from 'mdx-deck';
+import { Split } from 'mdx-deck/layouts';
 import { LineChart, Line } from 'recharts';
 import Languages from './components/languages';
-export { theme } from './theme';
-
+// export { theme } from './theme';
+export { book as theme } from '@mdx-deck/themes';
 <Head>
   <title>Zachary Nusbaum</title>
-</Head>
+</Head>;
 
 # Hi, I'm Zach!
 
@@ -13,10 +14,55 @@ www.ZDN.dev &mdash; hello@zdn.dev
 
 ---
 
-### Frequently Used Programming Languages
+# Education
 
-<Languages />
+<Split>
+
+  <div>
+    <p style={{fontSize: '32px'}}>Michigan State University</p>
+    <p style={{color: 'grey', fontSize: '24px'}}>August 2011 - December 2014</p>
+    <p style={{fontSize: '24px'}}><u>Bachelor of Science</u> <br/> Philosophy and Sociology of Science</p>
+    <p style={{fontSize: '24px'}}><u>Minor</u> <br/> Spanish Language</p>
+  </div>
+  <div>
+    <p style={{fontSize: '32px'}}>San Diego Mesa College</p>
+    <p style={{color: 'grey', fontSize: '24px'}}>May 2018 - May 2019</p>
+    <p style={{fontSize: '24px'}}><u>Continuing Education</u><br/>Web Development Program</p>
+  </div>
+
+</Split>
 
 ---
 
-<https://github.com/jxnblk/mdx-deck>
+<Split>
+  <div>
+    <h3>Frontend</h3>
+    <ul>
+      <li>React</li>
+      <li>Angular</li>
+      <li>Next.js</li>
+      <li>jQuery</li>
+      <li>HTML5 / CSS3</li>
+    </ul>
+  </div>
+
+  <div>
+    <h3>Backend</h3>
+    <ul>
+      <li>Node.js / Express</li>
+      <li>Ruby on Rails</li>
+      <li>MySQL</li>
+      <li>PostgreSQL</li>
+      <li>REST</li>
+      <li>GraphQL</li>
+    </ul>
+  </div>
+</Split>
+
+---
+
+### Frequently Used Programming Languages
+
+<span style={{ fontSize: '24px' }}>Data for 2-week period: 4/25/2019 to 5/9/2019</span>
+
+<Languages />
